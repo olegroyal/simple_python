@@ -32,5 +32,8 @@ print('asdfg'[::-1])
 print(f'\nNext ****************\n')
 
 print(0 or False or '' or [] or 42 or "Hello")
+
 # For creating and switching to new branch : "git checkout -b main-fix"
 # For  switching to new branch : "git checkout main-fix"
+print(f'Use new branch main-fix')
+
