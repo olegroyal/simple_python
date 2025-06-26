@@ -55,8 +55,8 @@ def is_even_log(number):
 print(is_even_log(11))
 
 def string_or_not(value):
-    return isinstance(value, str)
-print(string_or_not('hello') and 'Yes' or 'No')
-print(string_or_not(3) and 'Yes' or 'No')
+    return isinstance(value, str) and 'yes' or 'no'
+print(string_or_not('hello'))
+print(string_or_not(3))
 
 print(f'\nNext ****************\n')
