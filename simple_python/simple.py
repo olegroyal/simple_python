@@ -32,5 +32,8 @@ print('asdfg'[::-1])
 print(f'\nNext ****************\n')
 
 print(0 or False or '' or [] or 42 or "Hello")
-
 print(f'Use new branch main-fix')
+print(False or 232  or '' )
+def is_even_log(number):
+    return (number % 2 == 0 and 'Yes' or 'No')
+print(is_even_log(11))
