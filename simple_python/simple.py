@@ -49,10 +49,11 @@ print(False or 232 or '')
 
 print(f'\nNext ****************\n')
 
+
 def is_even_log(number):
     return (number % 2 == 0 and 'Yes' or 'No')
+
+
 print(is_even_log(11))
 
-
 print(f'\nNext ****************\n')
-
