@@ -52,8 +52,11 @@ print(f'\nNext ****************\n')
 
 def is_even_log(number):
     return (number % 2 == 0 and 'Yes' or 'No')
-
-
 print(is_even_log(11))
+
+def string_or_not(value):
+    return isinstance(value, str)
+print(string_or_not('hello') and 'Yes' or 'No')
+print(string_or_not(3) and 'Yes' or 'No')
 
 print(f'\nNext ****************\n')
