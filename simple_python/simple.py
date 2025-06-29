@@ -69,4 +69,16 @@ print(guess_number('hello'))
 print(guess_number(42))
 print(guess_number(3))
 
+print(f'\nNext ****************\n')
+
+def normalize_url(address):
+    if address[:8] == 'https://':
+        return  address
+    else:
+        if address[:7] == 'http://':
+            return 'https://' + address[7:]
+        else:
+            return 'https://' + address
+
+print(normalize_url('aa.com'))
 
