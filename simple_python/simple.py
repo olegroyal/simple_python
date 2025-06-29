@@ -60,3 +60,13 @@ print(string_or_not('hello'))
 print(string_or_not(3))
 
 print(f'\nNext ****************\n')
+
+def guess_number(number):
+    if number == 42:
+        return 'You win!'
+    return 'Try again!'
+print(guess_number('hello'))
+print(guess_number(42))
+print(guess_number(3))
+
+
