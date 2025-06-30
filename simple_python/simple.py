@@ -83,3 +83,5 @@ def normalize_url(address):
 
 print(normalize_url('aa.com'))
 
+
+
