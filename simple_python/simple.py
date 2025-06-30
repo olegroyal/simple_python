@@ -72,13 +72,14 @@ print(guess_number(3))
 print(f'\nNext ****************\n')
 
 def normalize_url(address):
-    if address[:8] == 'https://':
+    source = 'https://'
+    if address[:8] == source:
         return  address
     else:
         if address[:7] == 'http://':
-            return 'https://' + address[7:]
+            return source + address[7:]
         else:
-            return 'https://' + address
+            return source + address
 
 print(normalize_url('aa.com'))
 
