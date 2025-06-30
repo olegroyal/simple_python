@@ -33,6 +33,6 @@ jobs:
 #    runs-on: ubuntu-latest
 #    if: github.ref == 'refs/heads/main'
 
-    steps:
-    - name: Deploy script
-      run: echo "Deploying to production..."
+ #   steps:
+ #   - name: Deploy script
+ #     run: echo "Deploying to production..."
