@@ -172,3 +172,17 @@ print(get_number_explanation(8))
 print(get_number_explanation(666))
 print(get_number_explanation(42))
 print(get_number_explanation(7))
+
+
+print(f'\nNext ****************\n')
+
+def print_numbers(number):
+    i = number
+    while i > 0 :
+       print(i)
+       i = i - 1
+    print('finished!')
+
+print_numbers(4)
+
+print(f'\nNext ****************\n')
