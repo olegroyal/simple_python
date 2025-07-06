@@ -84,4 +84,47 @@ def normalize_url(address):
 print(normalize_url('aa.com'))
 
 
+print(f'\nNext ****************\n')
 
+def get_type_of_sentence(sentence):
+    last_char = sentence[-1]
+    if last_char == '?':
+        sentence_type = 'question'
+    elif last_char == '!':
+        sentence_type = 'exclamation'
+    elif last_char == '*':
+        sentence_type = 'star'
+    else:
+        sentence_type = 'normal'
+    return 'Sentence is ' + sentence_type
+print(get_type_of_sentence('hello*'))
+
+def who_is_this_house_to_starks(family):
+    if family == 'Karstark' or  family == 'Tully':
+        return  'friend'
+    elif family == 'Lannister' or family == 'Frey':
+        return 'enemy'
+    return 'neutral'
+
+print(who_is_this_house_to_starks('Karstark'))
+print(who_is_this_house_to_starks('Tully'))
+print(who_is_this_house_to_starks('Lannister'))
+print(who_is_this_house_to_starks('Frey'))
+print(who_is_this_house_to_starks('Neutral'))
+print(who_is_this_house_to_starks('Frey'))
+
+
+print(f'\nNext ****************\n')
+
+def abs(number):
+    if number >= 0:
+        return number
+    return -number
+print(abs(2))
+def abs1(number):
+    return number if number >= 0 else -number
+print(abs(-2))
+
+def flip_flop(sent):
+    return 'flop' if sent == 'flip' else 'flip'
+print(flip_flop('flip'))
