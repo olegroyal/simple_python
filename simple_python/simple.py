@@ -128,3 +128,47 @@ print(abs(-2))
 def flip_flop(sent):
     return 'flop' if sent == 'flip' else 'flip'
 print(flip_flop('flip'))
+
+
+print(f'\nNext ****************\n')
+
+def check_match(sent):
+    match  sent:
+        case 'flop':
+            return 'flip'
+        case 'flip':
+            return 'flop'
+        case _:
+            return "new"
+
+print(check_match('hello'))
+print(check_match('flop'))
+
+def count_item(count):
+    result = ''
+    match count:
+        case 1:
+            result = 'one'
+        case 2:
+            result = 'two'
+        case _:
+            result = 'None'
+    return result
+print(count_item(1))
+print(count_item(2))
+print(count_item(3))
+
+def get_number_explanation(number):
+    match number:
+        case 666:
+            return 'devil number'
+        case 42:
+            return 'answer for everything'
+        case 7:
+            return 'prime number'
+        case _:
+            return 'just a number'
+print(get_number_explanation(8))
+print(get_number_explanation(666))
+print(get_number_explanation(42))
+print(get_number_explanation(7))
