@@ -186,3 +186,66 @@ def print_numbers(number):
 print_numbers(4)
 
 print(f'\nNext ****************\n')
+
+def chain_com(sens):
+    return sens.upper().lower()
+print(chain_com('helLo'))
+def get_hidden_card(card_number, last_symbols = 4):
+    return f'{"*" * last_symbols}{card_number[-4:]}'
+print (get_hidden_card('1234567812345678'))
+
+def multiply_numbers_from_range(start, finish):
+    i = start
+    sum = 1
+    while i <= finish:
+        sum = sum * i
+        i = i + 1
+    return sum
+print (multiply_numbers_from_range(2, 3))
+
+def join_numbers_from_range(start, finish):
+    result = ''
+    i = start
+    while i <= finish:
+        result = result + str(i)
+        i = i + 1
+    return result
+print(join_numbers_from_range(2, 8))
+
+def print_reversed_word_by_symbol (name):
+    i = 1
+    while i <= len(name):
+        print(name[-i])
+        i = i + 1
+print_reversed_word_by_symbol('Oleg')
+
+def count_chars(string, char):
+    index = 0
+    count = 0
+    while index < len(string):
+        if string[index].lower() == char.lower():
+            count += 1
+        index += 1
+    return count
+print(count_chars('heeEEEeeeeello', "E"))
+
+def reverse_string(string):
+    i = len(string) - 1
+    reverse_string = ''
+    while i >= 0:
+        reverse_string = reverse_string + string[i]
+        i = i - 1
+    return reverse_string
+print(reverse_string('hello'))
+
+def my_substr(string, length):
+    index = 0
+    new_string = ''
+    while index < length:
+        new_string = new_string + string[index]
+        index = index + 1
+    return new_string
+print(my_substr('hello', 3))
+
+
+print(f'\nNext ***************\n')
