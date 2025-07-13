@@ -1,4 +1,4 @@
-from http.cookiejar import uppercase_escaped_char
+#from http.cookiejar import uppercase_escaped_char
 
 
 def is_even(number):
