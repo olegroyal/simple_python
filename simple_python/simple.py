@@ -249,3 +249,29 @@ print(my_substr('hello', 3))
 
 
 print(f'\nNext ***************\n')
+
+def my_substr(string, ind,  length):
+    index = ind
+    new_string = ''
+    # return length >=0 or length >= 0 or ind >= len(string) or len(new_string) + ind >= length
+
+    while index < length:
+        new_string = new_string + string[index]
+        index = index + 1
+        print(new_string)
+
+    return length >=0 and  ind >= 0 and  ind <= len(string) -1 and length + ind <=len(string)
+
+print(my_substr('hello', -1, 0))
+
+def filter_string(string, sim):
+    index = 0
+    new_string = ''
+    while index < len(string) :
+        if string[index] != sim:
+            new_string = new_string + string[index]
+        index += 1
+    return new_string
+print(filter_string('alalalalala', 'l'))
+
+print(f'\nNext ***************\n')
