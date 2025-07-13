@@ -1,4 +1,4 @@
-#from http.cookiejar import uppercase_escaped_char
+# from http.cookiejar import uppercase_escaped_char
 
 
 def is_even(number):
@@ -52,39 +52,49 @@ print(f'\nNext ****************\n')
 
 def is_even_log(number):
     return (number % 2 == 0 and 'Yes' or 'No')
+
+
 print(is_even_log(11))
+
 
 def string_or_not(value):
     return isinstance(value, str) and 'yes' or 'no'
+
+
 print(string_or_not('hello'))
 print(string_or_not(3))
 
 print(f'\nNext ****************\n')
 
+
 def guess_number(number):
     if number == 42:
         return 'You win!'
     return 'Try again!'
+
+
 print(guess_number('hello'))
 print(guess_number(42))
 print(guess_number(3))
 
 print(f'\nNext ****************\n')
 
+
 def normalize_url(address):
     source = 'https://'
     if address[:8] == source:
-        return  address
+        return address
     else:
         if address[:7] == 'http://':
             return source + address[7:]
         else:
             return source + address
 
+
 print(normalize_url('aa.com'))
 
-
 print(f'\nNext ****************\n')
+
 
 def get_type_of_sentence(sentence):
     last_char = sentence[-1]
@@ -97,14 +107,18 @@ def get_type_of_sentence(sentence):
     else:
         sentence_type = 'normal'
     return 'Sentence is ' + sentence_type
+
+
 print(get_type_of_sentence('hello*'))
 
+
 def who_is_this_house_to_starks(family):
-    if family == 'Karstark' or  family == 'Tully':
-        return  'friend'
+    if family == 'Karstark' or family == 'Tully':
+        return 'friend'
     elif family == 'Lannister' or family == 'Frey':
         return 'enemy'
     return 'neutral'
+
 
 print(who_is_this_house_to_starks('Karstark'))
 print(who_is_this_house_to_starks('Tully'))
@@ -113,27 +127,36 @@ print(who_is_this_house_to_starks('Frey'))
 print(who_is_this_house_to_starks('Neutral'))
 print(who_is_this_house_to_starks('Frey'))
 
-
 print(f'\nNext ****************\n')
+
 
 def abs(number):
     if number >= 0:
         return number
     return -number
+
+
 print(abs(2))
+
+
 def abs1(number):
     return number if number >= 0 else -number
+
+
 print(abs(-2))
+
 
 def flip_flop(sent):
     return 'flop' if sent == 'flip' else 'flip'
-print(flip_flop('flip'))
 
+
+print(flip_flop('flip'))
 
 print(f'\nNext ****************\n')
 
+
 def check_match(sent):
-    match  sent:
+    match sent:
         case 'flop':
             return 'flip'
         case 'flip':
@@ -141,8 +164,10 @@ def check_match(sent):
         case _:
             return "new"
 
+
 print(check_match('hello'))
 print(check_match('flop'))
+
 
 def count_item(count):
     result = ''
@@ -154,9 +179,12 @@ def count_item(count):
         case _:
             result = 'None'
     return result
+
+
 print(count_item(1))
 print(count_item(2))
 print(count_item(3))
+
 
 def get_number_explanation(number):
     match number:
@@ -168,31 +196,42 @@ def get_number_explanation(number):
             return 'prime number'
         case _:
             return 'just a number'
+
+
 print(get_number_explanation(8))
 print(get_number_explanation(666))
 print(get_number_explanation(42))
 print(get_number_explanation(7))
 
-
 print(f'\nNext ****************\n')
+
 
 def print_numbers(number):
     i = number
-    while i > 0 :
-       print(i)
-       i = i - 1
+    while i > 0:
+        print(i)
+        i = i - 1
     print('finished!')
+
 
 print_numbers(4)
 
 print(f'\nNext ****************\n')
 
+
 def chain_com(sens):
     return sens.upper().lower()
+
+
 print(chain_com('helLo'))
-def get_hidden_card(card_number, last_symbols = 4):
+
+
+def get_hidden_card(card_number, last_symbols=4):
     return f'{"*" * last_symbols}{card_number[-4:]}'
-print (get_hidden_card('1234567812345678'))
+
+
+print(get_hidden_card('1234567812345678'))
+
 
 def multiply_numbers_from_range(start, finish):
     i = start
@@ -201,7 +240,10 @@ def multiply_numbers_from_range(start, finish):
         sum = sum * i
         i = i + 1
     return sum
-print (multiply_numbers_from_range(2, 3))
+
+
+print(multiply_numbers_from_range(2, 3))
+
 
 def join_numbers_from_range(start, finish):
     result = ''
@@ -210,14 +252,20 @@ def join_numbers_from_range(start, finish):
         result = result + str(i)
         i = i + 1
     return result
+
+
 print(join_numbers_from_range(2, 8))
 
-def print_reversed_word_by_symbol (name):
+
+def print_reversed_word_by_symbol(name):
     i = 1
     while i <= len(name):
         print(name[-i])
         i = i + 1
+
+
 print_reversed_word_by_symbol('Oleg')
+
 
 def count_chars(string, char):
     index = 0
@@ -227,7 +275,10 @@ def count_chars(string, char):
             count += 1
         index += 1
     return count
+
+
 print(count_chars('heeEEEeeeeello', "E"))
+
 
 def reverse_string(string):
     i = len(string) - 1
@@ -236,7 +287,10 @@ def reverse_string(string):
         reverse_string = reverse_string + string[i]
         i = i - 1
     return reverse_string
+
+
 print(reverse_string('hello'))
+
 
 def my_substr(string, length):
     index = 0
@@ -245,12 +299,14 @@ def my_substr(string, length):
         new_string = new_string + string[index]
         index = index + 1
     return new_string
-print(my_substr('hello', 3))
 
+
+print(my_substr('hello', 3))
 
 print(f'\nNext ***************\n')
 
-def my_substr(string, ind,  length):
+
+def my_substr(string, ind, length):
     index = ind
     new_string = ''
     # return length >=0 or length >= 0 or ind >= len(string) or len(new_string) + ind >= length
@@ -260,18 +316,22 @@ def my_substr(string, ind,  length):
         index = index + 1
         print(new_string)
 
-    return length >=0 and  ind >= 0 and  ind <= len(string) -1 and length + ind <=len(string)
+    return length >= 0 and ind >= 0 and ind <= len(string) - 1 and length + ind <= len(string)
+
 
 print(my_substr('hello', -1, 0))
+
 
 def filter_string(string, sim):
     index = 0
     new_string = ''
-    while index < len(string) :
+    while index < len(string):
         if string[index] != sim:
             new_string = new_string + string[index]
         index += 1
     return new_string
+
+
 print(filter_string('alalalalala', 'l'))
 
 print(f'\nNext ***************\n')
