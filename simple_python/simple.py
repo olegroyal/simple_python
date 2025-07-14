@@ -335,3 +335,52 @@ def filter_string(string, sim):
 print(filter_string('alalalalala', 'l'))
 
 print(f'\nNext ***************\n')
+def is_prime(number):
+    if number < 2:
+        return False
+
+    divider = 2
+    while divider <= number / 2:
+
+        if number % divider == 0:
+           return False
+
+        divider += 1
+
+    return True
+
+print(is_prime(11))  # => True
+
+def is_contains_char(string, letter):
+    index = 0
+    while index < len(string):
+        if string[index] == letter:
+            return True
+        index += 1
+    return False
+
+print(is_contains_char('SasasasdfasdfaDDD', 'd'))
+
+def reverse_string(text):
+    # Начальное значение
+    result = ''
+    # char - переменная, в которую записывается текущий символ
+    for char in text:
+        # Соединяем в обратном порядке
+        result = char + result
+    # Цикл заканчивается, когда пройдена вся строка
+    return result
+print(reverse_string('hello'))
+
+
+def filter_string(string, char):
+    result = ''
+    for key in string:
+        if key.lower() != char.lower():
+            result += key
+
+    return result
+
+print(filter_string('alalalalala', 'l'))
+
+print(f'\nNext ***************\n')
