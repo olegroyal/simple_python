@@ -1,4 +1,5 @@
 # from http.cookiejar import uppercase_escaped_char
+from ctypes import HRESULT
 
 
 def is_even(number):
@@ -378,9 +379,22 @@ def filter_string(string, char):
     for key in string:
         if key.lower() != char.lower():
             result += key
+            print(result)
 
-    return result
+    return  result
 
 print(filter_string('alalalalala', 'l'))
 
 print(f'\nNext ***************\n')
+
+def print_table_of_squares(first, last):
+    for i in range(first, last + 1):
+        result = i * i
+        print(f"square of {i} is {result}")
+
+#    return f"square of {i} is {result}"
+
+print(print_table_of_squares(1, 10))
+
+print(f'\nNext ***************\n')
+
