@@ -23,3 +23,26 @@ a = '123123123123123123123'
 while i < len(a):
     print(a[i])
     i = i + 3
+print(f'\nNext ***************\n')
+
+list = ["Oleg","Pinchuk","Grior","1963"]
+list.append('13/04')
+list.insert(1,'first')
+list.extend(['first','second'])
+list.remove('first')
+list.remove('first')
+list.pop(1)
+list.append(55)
+
+print(list)
+print(list.index('13/04'))
+
+list = []
+list.append('a')  ## Use append() to add elements
+list.append('b')
+print(list)
+
+list = ['a', 'b', 'c', 'd']
+print(list[1:-1])   ## ['b', 'c']
+list[0:2] = 'z'    ## replace ['a', 'b'] with ['z']
+print(list)         ## ['z', 'c', 'd']
