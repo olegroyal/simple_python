@@ -6,6 +6,16 @@ print (2+2)
     #list       List [1, 2, 3, 4)
 # internal function
 print ('Oleg')
+#name = input ("Enter your name:") # type str only
+#print (name)
+name ='Oleg'
+print (dir(name))
+print(name.lower())
+print(print)
+
+
+
+
 
 
 
